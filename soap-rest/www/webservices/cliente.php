@@ -15,10 +15,10 @@ var_dump($result);
 if (is_soap_fault($result)){
 	echo "Erro ao executar o WebServices!";
 }else{
-	echo "Resultado encontrado: A soma eh:  ". $result[0] . "<br />";
-	echo "Resultado encontrado: A subtracao eh:  ". $result[1] . "<br />";
-	echo "Resultado encontrado: A multiplicacao eh:  ". $result[2] . "<br />";
-	echo "Resultado encontrado: A divisao eh:  ". $result[3] . "<br />";
+	echo "Resultado encontrado: A soma dos valores é:  ". $result[0] . "<br />";
+	echo "Resultado encontrado: A subtracao dos valores é:  ". $result[1] . "<br />";
+	echo "Resultado encontrado: A multiplicacao dos valores é:  ". $result[2] . "<br />";
+	echo "Resultado encontrado: A divisao valores é:  ". $result[3] . "<br />";
 }
 ?>
 
