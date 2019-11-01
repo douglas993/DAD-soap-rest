@@ -1,8 +1,8 @@
-version: "2"
+version: "3"
 services:
     www:
         build: .
-        ports: 
+        ports:
             - "80:80"
         volumes:
             - ./www:/var/www/html/
@@ -11,9 +11,10 @@ services:
         networks:
             - default
     db:
-        image: mysql:5.7.13
-        ports: 
-            - "3306:3306"
+        image: mysql:8.0.16
+        command: ['--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci','--default-authentication-plugin=mysql_native_password']
+        ports:
+            - "3307:3306"
         environment:
             MYSQL_DATABASE: myDb
             MYSQL_USER: user
@@ -25,8 +26,8 @@ services:
         networks:
             - default
     phpmyadmin:
-        image: phpmyadmin/phpmyadmin
-        links: 
+        image: phpmyadmin/phpmyadmin:4.8
+        links:
             - db:db
         ports:
             - 8000:80

@@ -1,0 +1,12 @@
+Gustavo Henrique
+
+O que postar:
+- Aplicação Apache-PHP
+    -WWW e WebService funcional com nomes alterados e nossas modificações
+
+- Aplicação SOAP-REST
+    -WWW e WebService funcional com nomes alterados e nossas modificações
+
+Criar repositorio no GitHub e mandar as duas aplicações pra lá
+
+Enviar o link do GitHub para o professor.
